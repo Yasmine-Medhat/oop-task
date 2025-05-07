@@ -1,0 +1,25 @@
+Polymorphism
+•	Is the one of the main four concepts in oop(encapsulation,inheritance,polymorphism and abstraction)
+•	It is devided into two main concepts
+i.	Overloading
+      when we have more than one function all have the same name this concept wasn't exists in php
+ii.	Overriding
+   when we have function in the parent class and the same function in the child class with the same header but the body of two functions are different it exists in the inhertance concept for example
+
+	class shape{
+    function calc_area(){
+        echo "this function calc the area of this shape";
+    }
+}
+class rectangle extends shape{
+    function calc_area(){
+        echo "rectangle's area";
+    }
+}
+$rec=new rectangle ();
+$rec->calc_area();
+
+the result is (rectangle's area)
+
+
+the child class over ride function calc_area in the parent class
